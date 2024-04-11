@@ -9,10 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69b376579b458d34d85581b14f5ca8df, type: 3}
-  m_Name: Pyro Tower Data
+  m_Script: {fileID: 11500000, guid: 8d561ab18d42ecf4b93aee63014b169f, type: 3}
+  m_Name: Crystal2 HitEffect
   m_EditorClassIdentifier: 
-  type: 1
-  defaulDmg: 10
-  attackCooldown: 1
-  attackRadius: 30
+  objectPrefab: {fileID: 1065624466683323245, guid: 0b12d45063fc96a4f9e428038ad4190e,
+    type: 3}

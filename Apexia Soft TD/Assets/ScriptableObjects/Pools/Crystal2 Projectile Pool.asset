@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63b35d9327f370d40bf743e25831f0a9, type: 3}
   m_Name: Crystal2 Projectile Pool
   m_EditorClassIdentifier: 
-  objectPrefab: {fileID: 8647111209156359023, guid: 177c2faaf9ce3a54d8500fd0634b0583,
+  objectPrefab: {fileID: -5863347729676075601, guid: 177c2faaf9ce3a54d8500fd0634b0583,
     type: 3}

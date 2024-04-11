@@ -9,10 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc664dd773360b84d87e060b01b8e8ec, type: 3}
-  m_Name: Pyro Projectile 2 Data
+  m_Script: {fileID: 11500000, guid: 8d561ab18d42ecf4b93aee63014b169f, type: 3}
+  m_Name: Pyro hitEffect
   m_EditorClassIdentifier: 
-  damage: 18
-  moveSpeed: 40
-  projectilePool: {fileID: 11400000, guid: cadc96555f0bbf842b89c259703baee4, type: 2}
-  damageRadius: 7
+  objectPrefab: {fileID: 1952402576636901586, guid: 0f743f97ce3b782418582e873672c6dc,
+    type: 3}

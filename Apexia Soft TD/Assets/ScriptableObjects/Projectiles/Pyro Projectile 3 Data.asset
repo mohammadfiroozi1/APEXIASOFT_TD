@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc664dd773360b84d87e060b01b8e8ec, type: 3}
   m_Name: Pyro Projectile 3 Data
   m_EditorClassIdentifier: 
-  damage: 15
-  moveSpeed: 20
-  attackRadius: 20
+  damage: 20
+  moveSpeed: 40
+  projectilePool: {fileID: 11400000, guid: 2f40661e8cfa2e04a9041df491df7df6, type: 2}
+  damageRadius: 10
