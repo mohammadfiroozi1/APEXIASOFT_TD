@@ -31,7 +31,8 @@ public class Enemies : MonoBehaviour
 
     private void InitializeEnemy()
     {
-        wayPoints = wayPointEventChannel.GetWayPoints();
+        currentWayPointIndex = 0;
+        wayPoints = wayPointEventChannel.GetValue();
         hp = data.defaultHp;
     }
 

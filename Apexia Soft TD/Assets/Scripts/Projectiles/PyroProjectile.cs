@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CrystalProjectile : Projectile
+public class PyroProjectile : Projectile
 {
     [SerializeField] ProjectileHitEffectPool hitEffectPool;
+    [SerializeField] AoeProjectileData projectileData;
+    [SerializeField] LayerMask enemylayer;
     ProjectileHitEffect hitEffect;
+
     public override void Initialize(Transform target, float moveSpeed)
     {
         base.Initialize(target, moveSpeed);
@@ -22,9 +25,9 @@ public class CrystalProjectile : Projectile
     public override void MoveToTarget(Transform target)
     {
         base.MoveToTarget(target);
-        if(target!= null)
+        if (target != null)
         {
-            transform.position = Vector3.MoveTowards(transform.position, target.position + new Vector3(0,1f,0), moveSpeed * Time.deltaTime);;
+            transform.position = Vector3.MoveTowards(transform.position, target.position + new Vector3(0, 1f, 0), moveSpeed * Time.deltaTime); ;
         }
     }
 
@@ -32,12 +35,17 @@ public class CrystalProjectile : Projectile
     {
         if (other.gameObject.CompareTag("Enemy") && other.gameObject.transform == target)
         {
-            var enemy = other.gameObject.GetComponent<Enemies>();
-            enemy.takeDmg(GetDamageAmount());
-            hitEffect = hitEffectPool.pool.Get();
-            hitEffect.transform.position = target.transform.position + new Vector3(0, 1f, 0);
-            StartCoroutine(DestroyHitEffect());
-            data.projectilePool.OnReleaseObject(this);
+            var enemies = Physics.OverlapSphere(transform.position, projectileData.damageRadius, enemylayer);
+            foreach (var enemy in enemies)
+            {
+                var targetEnemy = enemy.gameObject.GetComponent<Enemies>();
+                targetEnemy.takeDmg(GetDamageAmount());
+                hitEffect = hitEffectPool.pool.Get();
+                hitEffect.transform.position = target.transform.position + new Vector3(0, 1f, 0);
+                StartCoroutine(DestroyHitEffect());
+                data.projectilePool.OnReleaseObject(this);
+            }
+
 
         }
     }

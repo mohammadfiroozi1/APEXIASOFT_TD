@@ -41,8 +41,6 @@ public class CrystalTower : Toweres
             attackCooldown-=Time.deltaTime;
             if (attackCooldown <= 0)
             {
-                print("hi");
-
                 SpawnProjectile();
                 attackCooldown = data.attackCooldown;
             }
@@ -57,5 +55,7 @@ public class CrystalTower : Toweres
         projectile.Initialize(targetEnemy, data.projectile.data.moveSpeed);
 
     }
+
+    
 
 }

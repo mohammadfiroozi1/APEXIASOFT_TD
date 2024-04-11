@@ -13,7 +13,7 @@ public class WayPointGetter : MonoBehaviour
 
     private void OnEnable()
     {
-        wayPointChannel.GetWayPoints += GetWayPointList;
+        wayPointChannel.GetValue += GetWayPointList;
     }
     public List<Transform> GetWayPointList() => wayPoints;
 }

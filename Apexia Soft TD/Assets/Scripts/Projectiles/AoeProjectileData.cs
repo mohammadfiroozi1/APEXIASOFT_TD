@@ -7,5 +7,5 @@ using UnityEngine;
 public class AoeProjectileData : ProjectileData
 {
     [Header("Damage Options")]
-    public float attackRadius;
+    public float damageRadius;
 }

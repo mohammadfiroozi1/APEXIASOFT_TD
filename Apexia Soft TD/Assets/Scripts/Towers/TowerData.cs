@@ -6,7 +6,7 @@ using UnityEngine;
 
 public enum TowerType
 {
-    SingleTarget, AoeTarget
+    SingleTarget, MultipleTarget
 }
 
 [CreateAssetMenu(menuName = "Data/Tower Data", fileName = "Tower Data")]
@@ -21,6 +21,12 @@ public class TowerData : ScriptableObject
     [Header("Attack Options")]
     public float attackCooldown;
     public float attackRadius;
-   
+
+    [Header("UI Elements")]
+    public Sprite towerIcon;
+
+    [Header("Build Options")]
+    public int price;
+    public string towerName;
 
 }

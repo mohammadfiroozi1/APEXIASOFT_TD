@@ -15,4 +15,5 @@ public class ProjectileData : ScriptableObject
     [Header("Projectile Pool")]
     public ProjectilePool projectilePool;
 
+
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    public  ProjectileData data;
+    public ProjectileData data;
     public Transform target;
     public Transform lastTargetPosition;
     public float moveSpeed;
