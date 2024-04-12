@@ -9,7 +9,7 @@ public class TowerUiPanelController : MonoBehaviour
     [SerializeField] Transform buildHolder;
     [SerializeField] Button closePanelBtn;
     [SerializeField] TowerBuilderPannelChannel towerUiChannel;
-
+    [SerializeField] GoldManagerEventChannel goldManagerChannel;
     private void Start()
     {
         gameObject.SetActive(false);

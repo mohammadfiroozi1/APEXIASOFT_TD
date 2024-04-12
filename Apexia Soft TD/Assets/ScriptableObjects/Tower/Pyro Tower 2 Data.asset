@@ -12,11 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69b376579b458d34d85581b14f5ca8df, type: 3}
   m_Name: Pyro Tower 2 Data
   m_EditorClassIdentifier: 
-  projectile: {fileID: 2846899530832345669, guid: dfc14a88a2478284ba5419b368e0c26c,
-    type: 3}
+  projectile: {fileID: 2846899530832345669, guid: dfc14a88a2478284ba5419b368e0c26c, type: 3}
   type: 1
   attackCooldown: 1
   attackRadius: 30
-  towerIcon: {fileID: 21300000, guid: 8d98ab6168c3e91439339f1908b8fe97, type: 3}
+  towerIcon: {fileID: 21300000, guid: 399886eff949f4b47927b1135160382f, type: 3}
   price: 400
   towerName: Pyro Tw

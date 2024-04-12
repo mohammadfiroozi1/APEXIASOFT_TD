@@ -12,11 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69b376579b458d34d85581b14f5ca8df, type: 3}
   m_Name: Crystal Tower 3 Data
   m_EditorClassIdentifier: 
-  projectile: {fileID: -8782341223952473766, guid: 3a34203900b6dee4b838921c571d50c3,
-    type: 3}
+  projectile: {fileID: -8782341223952473766, guid: 3a34203900b6dee4b838921c571d50c3, type: 3}
   type: 0
   attackCooldown: 0.5
   attackRadius: 50
-  towerIcon: {fileID: 21300000, guid: 02800fb9cff14da47a04572790384d8b, type: 3}
+  towerIcon: {fileID: 21300000, guid: dde91b0c01011ed45a477607b02b80de, type: 3}
   price: 1000
   towerName: Crystal Tw lvl 3

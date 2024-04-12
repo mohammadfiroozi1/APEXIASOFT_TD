@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f169d079674c45348b6ba925a2e3a381, type: 3}
   m_Name: Tank Goblin Data
   m_EditorClassIdentifier: 
-  defaultHp: 200
-  defaultMoveSpeed: 2
+  defaultHp: 120
+  defaultMoveSpeed: 1
   rotationSpeed: 300

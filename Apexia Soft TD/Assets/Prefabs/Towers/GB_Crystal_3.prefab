@@ -23,13 +23,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5092027752383619899}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -0.010000229, y: 2.703, z: 0.020001411}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5089257886144997631}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5092102468991041791
 GameObject:
@@ -59,6 +59,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5092102468991041791}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -3.13, y: 0, z: -14.77}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -66,7 +67,6 @@ Transform:
   m_Children:
   - {fileID: 5097688950942100919}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5105227727653495217
 MeshFilter:
@@ -146,10 +146,9 @@ MonoBehaviour:
   data: {fileID: 11400000, guid: 2a2156ca961912541ae9aa05a8d315a6, type: 2}
   enemyLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 8
   projectileSpawnPos: {fileID: 5097688950942100919}
-  towerBuilderPannelChannel: {fileID: 11400000, guid: fda507b560ec248469ab95bfe5e1a49f,
-    type: 2}
+  towerBuilderPannelChannel: {fileID: 11400000, guid: fda507b560ec248469ab95bfe5e1a49f, type: 2}
 --- !u!65 &5093120143917866496
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -158,8 +157,16 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5092102468991041791}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 1.5889136, y: 19.18, z: 1.3878008}
   m_Center: {x: 0, y: 1.7296782, z: 0}
